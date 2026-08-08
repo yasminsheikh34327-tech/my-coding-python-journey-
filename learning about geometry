@@ -1,0 +1,27 @@
+print("Hello! Main hoon aapka Geometry Helper. Aapko kis shape ke baare mein jaanna hai?")
+shape = input("Type kariye (triangle / square): ").lower()
+
+if shape == "triangle":
+    print("\n--- Triangle (Tribhuj) Ki Jankari ---")
+    print("Isme 3 sides aur 3 angles hote hain. Total sum 180° hota hai.")
+    
+    # Ek aur if-else formula check karne ke liye
+    ask_formula = input("\nKya aapko Area ka formula jaanna hai? (haan / nahi): ").lower()
+    if ask_formula == "haan":
+        print("Formula: 1/2 * Base * Height")
+        
+        # Chota sa live calculator bina kisi library ke
+        base = float(input("Base ki value daliye: "))
+        height = float(input("Height ki value daliye: "))
+        area = 0.5 * base * height
+        print(f"Aapke triangle ka Area hai: {area}")
+
+elif shape == "square":
+    print("\n--- Square (Varg) Ki Jankari ---")
+    print("Iski saari 4 sides equal hoti hain aur har angle 90° ka hota hai.")
+    side = float(input("Ek side ki length daliye: "))
+    print(f"Square ka Area: {side * side}")
+    print(f"Square ka Perimeter: {4 * side}")
+
+else:
+    print("Sorry, abhi mujhe is shape ke baare mein nahi pata. Main dheere-dheere seekh raha hoon!")
