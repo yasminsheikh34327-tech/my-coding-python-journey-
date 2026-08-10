@@ -1,0 +1,20 @@
+# creating a mini/basic calculator
+
+print("==========Basic calculator========")
+
+
+try:
+    num1 = float(input("Enter a number :"))
+    num2 = float(input("Enter a number:"))
+    print("Addition:" , num1+num2)
+    print("subtaraction" , num1 - num2)
+    print(num1 * num2)
+    print(num1/num2)
+
+except ValueError :
+    print("Plz only put integer not string")
+except ZeroDivisionError :
+    print("Not defined")
+
+
+print("=======This is the end =========
