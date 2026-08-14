@@ -1,0 +1,38 @@
+import random
+
+# 1. Computer 1 se 20 ke beech ek random number chundta hai
+secret_number = random.randint(1, 20)
+total_chances = 5
+
+print("🎮 --- WELCOME TO THE NUMBER GUESSING GAME --- 🎮")
+print(
+    f"Mene 1 se 20 ke beech ek number socha hai. Aapke paas {total_chances} chances hain!\n"
+)
+
+# 2. Loop jo maximum 5 baar chalega
+for i in range(total_chances):
+    # Player ko dikhana ki kitne chances ho gaye hain
+    chance_num = i + 1
+    print(f"👉 Attempt {chance_num} of {total_chances}")
+
+    # User se input lena
+    guess = int(input("Apna guess enter karein: "))
+
+    # Secret number ke sath compare karna
+    if guess == secret_number:
+        print(
+            f"🎉 Wow! Mubarak ho! Aapne {chance_num} attempt(s) me sahi guess kar liya! 🏆"
+        )
+        break  # Game jeet gaye, isliye loop ko yahin rok denge
+
+    elif guess < secret_number:
+        print("💡 Hint: Aapka number Chhota hai! Thoda BADA number try karein.\n")
+
+    else:
+        print("💡 Hint: Aapka number Bada hai! Thoda CHHOTA number try karein.\n")
+
+# 3. Agar 5 baar me guess nahi ho paya (Loop poora khatam hone par)
+else:
+    print(
+        f"❌ Oops! Aapke sabhi chances khatam ho gaye. Sahi number tha: {secret_number}"
+    )
