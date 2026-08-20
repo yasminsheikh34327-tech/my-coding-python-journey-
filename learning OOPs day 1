@@ -1,0 +1,9 @@
+# learning Oops
+class student :
+    def __init__(self , name) :
+        self.name = name
+    def say_hello(self) :
+        print(f"Hello, my name is {self. name }!")
+# Object creation 
+s =student ("coder")
+s.say_hello()
