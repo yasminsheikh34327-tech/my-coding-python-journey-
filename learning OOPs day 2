@@ -1,0 +1,17 @@
+# learning Oops
+class parents :
+    def __init__(self , name) :
+        self.name = name
+    
+    def introduce (self) :
+        print(f"Hello, my name is {self. name }!")
+# child heritance 
+
+class student (parents):
+    def study(self):
+        print("one sheet of paper cant make your future shit !!!")
+# object creation 
+s = student ("coder")
+s.introduce()
+
+s.study()
