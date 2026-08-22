@@ -1,0 +1,15 @@
+# learning Oops
+class cars :
+    def __init__(self , brand , color , ) :
+        self.brand = brand
+        self.color = color
+    
+    def start_engine (self) :
+        print(f"{self.color} color ki branding start ho chuki hai {self.brand }!")
+# child heritance 
+
+car1 = cars("Ferrari" , "red")
+car2 = cars("Thar" , "Black")
+
+car1.start_engine()
+car2.start_engine()
