@@ -1,0 +1,23 @@
+# Parent Class
+class Person:
+    def __init__(self, name, role):
+        self.name = name
+        self.role = role
+
+    def introduce(self):
+        print(f"Hi, I am {self.name} and I am a {self.role}.")
+
+# Child Class inheriting from Person
+class Student(Person):
+    def __init__(self, name, grade):
+        # super() calls the __init__ of the parent class
+        super().__init__(name, role="Student")
+        self.grade = grade
+
+    def study(self):
+        print(f"{self.name} is studying for Grade {self.grade}.")
+
+# Creating an instance of Student
+student1 = Student("Aria", 11)
+student1.introduce()  # Output: Hi, I am Aria and I am a Student.
+student1.study()      # Output: Aria is studying for Grade 11.
