@@ -1,0 +1,19 @@
+# learning OOPs day 5
+
+class basicar:
+    def __init__ (self , brand):
+        self.brand = brand
+
+    def start_engine  (self):
+        print(f"{self.brand}: ye hamara naya modal hai")   
+        
+# child ingeritanxe 
+#making baccha stronger 
+class AIcar:
+    def self_drive(self) :
+        print(f"{self.brand} its the car mechanism")
+        
+s = "uset"   
+   
+s.self()
+s.brand()
