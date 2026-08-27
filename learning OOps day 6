@@ -1,0 +1,28 @@
+# making OOps code 
+
+class student :
+    def __init__(self , name , mark) :
+        self.name = name 
+        self.__mark = mark 
+
+    def get_mark(self) :
+        
+        print(f"{self.name} ke marks hai ,{ self.__mark}")
+
+    def set_mark (self , new_mark) :
+        if new_mark > 0 :
+            print("Marks Updated !!! ")
+        else :
+           print("Invalid marks ")   
+
+# time to test 
+s1 = student ("Rahul" , 89)
+
+
+
+# function ke zariye marks dekho 
+s1.get_mark()
+
+# Naye marks set karo 
+s1.set_mark(5)
+s1.get_mark()
