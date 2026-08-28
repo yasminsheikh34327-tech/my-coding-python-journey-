@@ -1,0 +1,22 @@
+# making Object Oriented programming 
+
+class animals :
+    def __init__(self , name ) :
+        self_name =self.name 
+        
+    def eat(self) :
+        print(" {self.name} is eating food ")
+        
+       
+# Child class dog 
+# 2. CHILD CLASS (Derived Class)
+class Dog(animals):  # Animal ki properties copy ho gayi!
+    def bark(self):
+        print(f"{self.name} bhonk raha hai: Woof Woof!")
+
+# --- Execution ---
+# Dog object me humne 'eat()' function nahi banaya tha, par parent se automatic mil gaya!
+my_dog = Dog()
+my_dog.eat()   # Output: Buddy khana kha raha hai.
+my_dog.bark()  # Output: Buddy bhonk rah
+                      
