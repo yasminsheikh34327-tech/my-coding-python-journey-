@@ -1,0 +1,22 @@
+class employ :
+    def __init__(self , name , salary) :
+        self.name = name
+        self.salary = salary
+        
+    def work (self) :
+        print(f"{self.name} is working on daily comapany task")
+        
+class manager (employ):
+    def __init__ (self , name , salary , team_size):
+        super(). __init__(self , name)
+        self.team_size = team_size 
+    def work (self):
+          print(f"{self.name} is managing the office work ")
+          
+  #testing object test
+
+mgr1 = manager("Anya" , 1500000 , 10)
+print(f"Manager name = {mgr1.name}")
+print(f"team size = {mgr1.team_size}")
+mgr1.work()
+          
