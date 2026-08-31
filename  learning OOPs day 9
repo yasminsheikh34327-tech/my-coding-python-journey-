@@ -1,0 +1,20 @@
+class Dog :
+    def sound(self):
+        print("Woof Woof!!!")
+        
+
+class Kitty :
+    def sound(self):
+        print("meow,meow ^•~•^ ®©")      
+                                                
+                          
+animal1 = Dog()   
+animal2 =Kitty()  
+
+     
+                         
+animal1.sound()                                                      
+
+animal2.sound()        
+                           
+                             
