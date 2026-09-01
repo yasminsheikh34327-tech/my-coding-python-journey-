@@ -1,0 +1,17 @@
+
+
+class student:
+    def __init__(self, name, mindset):
+        self.name = name     # Single TAB
+        self.mindset = mindset # Single TAB (No manual spaces!)
+
+    def display_vibe(self):
+        print(f"{self.name} has {self.mindset}")
+
+student1 = student("You", "JOMO 1% attitude")
+student2 = student("Bakugo", "cruel person in anime")
+
+student1.display_vibe()
+student2.display_vibe()
+ 
+ 
