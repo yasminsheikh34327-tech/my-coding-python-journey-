@@ -1,0 +1,56 @@
+# DanDaDan Object Oriented Code
+class character:
+    def attack (self):#putting self 
+        print(" jubaba shakti ON !!!")
+#child inheritance Kentakakura               
+class Okarun (character):  
+    def attack (self):
+        print("Turbo Baba jaag jao  !!!")
+            
+# child inheritance Momo ayase            
+class Ayase (character):
+    def attack (self):                  
+        print("Psychic jadugari wale haath")  
+# double kare trouble Attack!!!                        
+#chota packet dimaagi dhamaka                 
+char1 = Okarun()
+char2 = Ayase () 
+
+#using for in range 
+                
+for person in (char1 , char2):
+    person.attack()    
+    
+      
+# code khatam hota hai baaki ka kal 
+#Yo wai mo    
+class Character:
+
+    def attack(self):
+        print("Normal attack!")
+
+
+# Child Class 1
+class Okarun(Character):
+
+    def attack(self):  # Same function name, custom behavior
+        print("Turbo Speed Attack!")
+
+
+# Child Class 2
+class Momo(Character):
+
+    def attack(self):  # Same function name, custom behavior
+        print("Psychic Hand Crush!")
+
+
+# Objects
+char1 = Okarun()
+char2 = Momo()
+
+# Loop chala kar same method call kar rahe hain
+for person in (char1, char2):
+    person.attack
+    
+# YO WAI MO 
+# ARA ARA SAYONARA
