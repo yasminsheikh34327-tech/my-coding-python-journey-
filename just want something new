@@ -1,0 +1,11 @@
+# being mature is myth
+
+
+password ="Maturity"
+
+correct_input = input("Krupiya karke password dale ::: ")   
+                                                                                        
+if password == correct_input:
+    print("You are correct but not completely")            
+else:
+    print("You are not wrong put its your way is thinking and i can tottaly feel you")                               
