@@ -1,6 +1,6 @@
 My python learning journey
 
-Hey guess , 
+Hey, 👋 
 I am Yasmin khatun Sheikh ismail 
 and I am beginner 
 in python 
