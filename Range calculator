@@ -6,7 +6,7 @@ try:
     
     if v < 0 :
         print("invalid number it cannot be negative")
-    elif theta_deg <= -1:
+    elif theta_deg <= 90:
         print("Invalid input")
     else:       
         g = 9.8
