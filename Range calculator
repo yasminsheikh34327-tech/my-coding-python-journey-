@@ -1,0 +1,25 @@
+import math
+try:
+    v = float(input("isme velocity daalein ::"))
+    theta_deg = float(input("yahan par θ likho::"))
+    
+    
+    if v < 0 :
+        print("invalid number it cannot be negative")
+    elif theta_deg <= -1:
+        print("Invalid input")
+    else:       
+        g = 9.8
+        # Degrees to Radians conversion
+        theta_rad = math.radians(2 * theta_deg)
+
+        # Range formula calculation
+        # Note: sin(2*theta) ke liye direct 2*theta_deg ko radian mein convert kar sakte hain
+        range_val = (v**2 * math.sin(theta_rad)) / g
+
+        if range_val > 100:
+            print(f"Range: {range_val:.2f}m -> Target Out of Range! Extreme Velocity.")
+        else:
+            print(f"Range: {range_val:.2f}m -> Safe.")
+except ValueError:
+        print("Invalid numbers")  
