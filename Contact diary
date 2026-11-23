@@ -1,0 +1,47 @@
+# making a smart contact book :
+contacts = {}
+try:  
+    
+    while True:
+        print("\n ---------Contact book---------")
+        print("1.Add contact")    
+        print("2.Edit contact")
+        print("3.Add to fav")
+        print("4.Delete contact")
+        print("5.block contact")
+    
+        choice = input("In number me se choose kare (1-3) ::")
+    
+    
+        
+        
+        if choice == '1':
+            print("your choice is add contact::")
+            name = input("Enter Name: ").strip().title()
+            phone = input("Enter must have pnly 10 digit only number: ")
+            if len(phone) != 10:
+               print("Error enter only 10 digit not alphabets")
+            elif not phone.isdigit():
+                print("error")   
+            else:
+                category = input("yahanpar app conatct ki category abata saktr hai jaise wo apke (family/freinds/work/private) hai ::")
+                contacts[name] = {"phone" : phone , "category" : category}
+                print(f"Apka contacts {name} successfully save ho chuka hai")   
+         
+        elif choice == '2' :
+            print("Saare conatcts save wale :" , contacts)
+            info1 = (input("Birthday date :"))
+            info2 = (input("favorate ::"))
+            print("----information about your contact----")
+            print("yahan pehle information hai" , info1)
+            print("Yahan dusri inforamtion hai " , info2)
+            
+        elif choice == '3':
+            print(input("Plz give name of fav contact :"))
+            print(f"This is your favoraite conatct {name} ")
+
+        else:
+           print("choose your number plz ")
+           
+except ValueError:
+        print("wrong number ")        
