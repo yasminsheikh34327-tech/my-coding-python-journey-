@@ -1,0 +1,42 @@
+# Making a Task Completer & Story Teller
+while True:
+    print("\n--------------Task Completer---------------")
+    user_input = input("Put your time of work and what you have to do :: ").strip()
+
+    if user_input != "":
+        print("Okay it's your task! Let's check you completed it or not (Yes/No):")
+        user_input2 = input("Here you have to put :: ").strip().upper()
+
+        if user_input2 == "YES":
+            print("Congrats you did it, take a rest!")
+        elif user_input2 == "NO":
+            print("You have to complete your task, don't forget to do it now else you have to regret!")
+        else:
+            print("Choose between (Yes/No)")
+    else:
+        print("Did you have no work??? If no then sleep. Eat five star do nothing!")
+
+    # Kahani wala hissa
+    ans1 = input("\nKahani sunna hai toh 'Haa' likho warna 'Nahi' :: ").strip().lower()
+    if ans1 == "haa":
+        print("\nTo suno ek kahani, ek tha raja ek thi rani dono ka koi baccha nahi tha... kuch dino baad unki mehnat rang layi aur rani pregnant ho gayi.")
+        
+        ans2 = input("Janna chahte ho fir kya hua? (Haa/Nahi) :: ").strip().lower()
+        if ans2 == "haa":
+            print("\nUnhe ek sundar si ladki hui jiska naam unhone Anastasia (Ana) rakha. Uski sundarta ki charcha har jagah hone lagi.")
+            
+            ans3 = input("Janna chahoge ki fir kya hua? (Haa/Nahi) :: ").strip().lower()
+            if ans3 == "haa":
+                print("\nAnastasia ke ghar bohot saare rishte aane lage, par Ana ke standards kaafi high the! Usne shartein rakhi: 1) Sword fight, 2) Riddle/Question solve, 3) Test of loyalty, 4) Flirting, 5) Adab-kayda, 6) Honesty, 7) Hasana, 8) Properly kiss karna.")
+                
+                ans4 = input("Aage kya hua sunna hai? ('Haa batao' likho) :: ").strip().lower()
+                if ans4 == "haa batao":
+                    print("\nPehle din 100 competitors aaye, phir total 110 hue. King aur Queen ke kehne par Ana ne roz 50-50 ka competition rakha aur 3-4 din mein 99 princes ko eliminate kar diya! Baaki 11 strongest princes bache: Leo, Luka, Nike, Mikey, Nicolo, Falco, Rudious, Gabriel, Saytzeff, Williams, David. Itne naam dekh kar Ana confuse ho gayi...")
+                else:
+                    print("Aaj ke liye enough!")
+            else:
+                print("Aaj ke liye enough!")
+        else:
+            print("Aaj ke liye enough!")
+    else:
+        print("Aaj ke liye enough!")
